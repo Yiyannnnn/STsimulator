@@ -1,0 +1,20 @@
+name: "ST-simulator-website"
+output_dir: "."
+navbar:
+  title: "Simulator NAME?"
+  left:
+    - text: "About"
+      href: Main.html
+    - text: "Example"
+      href: Example.html
+    - text: "Shiny App"
+      href: Shiny_tutorial.html
+    - text: "Reproduce"
+      href: Data_code.html
+    - text: "Installation"
+      href: Rpackage.html
+      
+output:
+  html_document:
+    theme: spacelab
+    highlight: tango

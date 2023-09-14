@@ -1,0 +1,12 @@
+---
+title: "Shiny App"
+output: html_document
+---
+
+### Get Started
+
+To get started, please load the #Simulator Name# package.
+
+### Activate the shiny app
+
+

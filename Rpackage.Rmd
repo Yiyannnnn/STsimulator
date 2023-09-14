@@ -1,0 +1,30 @@
+---
+title: "Installation"
+output: html_document
+---
+
+#Simulator Name# is implemented as an R package, which can be installed from GitHub by:
+
+### 1. Install devtools if necessary
+
+\
+\
+\
+\
+
+
+### 2. Install #Simulator Name#
+
+\
+\
+\
+\
+
+### 3. Load package
+
+\
+\
+\
+\
+
+

@@ -1,0 +1,16 @@
+---
+title: "Example"
+output: html_document
+---
+
+### Get Started
+
+To get started, please load the #Simulator Name# package
+
+### Parameter Setting
+
+### Simulation
+
+...
+
+
