@@ -213,6 +213,7 @@ coord_prop_layer <- cbind(coord_prop,layer_factor,BASS_layer)
 ggplot(coord_prop_layer)+geom_point(aes(x=x_coord,y=y_coord,color=BASS_layer),shape=21,size=3) +
   coord_fixed()+xlim(-1,x_len+1)+ylim(-1,y_len+1)+theme_article()+scale_fill_distiller(palette = "Spectral")
 ```
+
 #### BayesSpace
 
 ```{r}

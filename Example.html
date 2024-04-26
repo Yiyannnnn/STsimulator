@@ -512,8 +512,10 @@ $(document).ready(function () {
 <span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>coord_prop_layer <span class="ot">&lt;-</span> <span class="fu">cbind</span>(coord_prop,layer_factor,BASS_layer)</span>
 <span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a><span class="fu">ggplot</span>(coord_prop_layer)<span class="sc">+</span><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x_coord,<span class="at">y=</span>y_coord,<span class="at">color=</span>BASS_layer),<span class="at">shape=</span><span class="dv">21</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="sc">+</span></span>
 <span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>  <span class="fu">coord_fixed</span>()<span class="sc">+</span><span class="fu">xlim</span>(<span class="sc">-</span><span class="dv">1</span>,x_len<span class="sc">+</span><span class="dv">1</span>)<span class="sc">+</span><span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">1</span>,y_len<span class="sc">+</span><span class="dv">1</span>)<span class="sc">+</span><span class="fu">theme_article</span>()<span class="sc">+</span><span class="fu">scale_fill_distiller</span>(<span class="at">palette =</span> <span class="st">&quot;Spectral&quot;</span>)</span></code></pre></div>
-<p><img src="Example_files/figure-html/unnamed-chunk-12-1.png" width="672" />
-#### BayesSpace</p>
+<p><img src="Example_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+</div>
+<div id="bayesspace" class="section level4">
+<h4>BayesSpace</h4>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>sce_BayesSpace <span class="ot">&lt;-</span> sce</span>
 <span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>row <span class="ot">=</span> coord<span class="sc">$</span>x</span>
 <span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>col <span class="ot">=</span> coord<span class="sc">$</span>y</span>
@@ -566,14 +568,14 @@ $(document).ready(function () {
 <pre><code>## Plotting scatterpies for 492 pixels with 3 cell-types...this could take a while if the dataset is large.</code></pre>
 <p><img src="Example_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="fu">mean</span>(result_method1[[<span class="st">&#39;rmse&#39;</span>]]<span class="sc">$</span>value)</span></code></pre></div>
-<pre><code>## [1] 0.213392</code></pre>
+<pre><code>## [1] 0.2260465</code></pre>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="co"># distance correlation</span></span>
 <span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a><span class="fu">head</span>(result_method1[[<span class="st">&#39;dcor&#39;</span>]])</span></code></pre></div>
 <pre><code>##    cell_type     value
 ##       &lt;char&gt;     &lt;num&gt;
-## 1: celltype1 0.9993451
-## 2: celltype2 0.8238636
-## 3: celltype3 0.8256008</code></pre>
+## 1: celltype1 0.9994146
+## 2: celltype2 0.7954124
+## 3: celltype3 0.8219638</code></pre>
 </div>
 <div id="gene-gene-coexpression" class="section level3">
 <h3>Gene-gene coexpression</h3>
